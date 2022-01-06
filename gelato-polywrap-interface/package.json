@@ -1,0 +1,16 @@
+{
+  "name": "gelato-polywrap-interface",
+  "description": "Gelato Polywrap Interface",
+  "version": "0.0.1-prealpha.56.1",
+  "scripts": {
+    "build": "npx w3 build",
+    "lint": "eslint --color -c ../../../.eslintrc.js .",
+    "test:env:up": "npx w3 test-env up",
+    "test:env:down": "npx w3 test-env down",
+    "deploy": "npx w3 build --ipfs http://localhost:5001"
+  },
+  "devDependencies": {
+    "@web3api/cli": "0.0.1-prealpha.56",
+    "gelato-polywrap-plugin": "^0.0.1-prealpha.56"
+  }
+}

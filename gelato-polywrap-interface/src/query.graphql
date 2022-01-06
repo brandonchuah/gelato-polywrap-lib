@@ -1,0 +1,19 @@
+#import { Query, Connection } into Ethereum from "w3://ens/ethereum.web3api.eth"
+#import { Query } into Logger from "w3://ens/js-logger.web3api.eth"
+#import { Query } into GraphNode from "w3://ens/graph-node.web3api.eth"
+#import { Query, Request, Response } into Http from "w3://ens/http.web3api.eth"
+#import { Query } into GelatoPlugin from "w3://ens/gelato-plugin.eth"
+
+type Query {
+  checker(
+    connection: Ethereum_Connection
+    argBuffer: Bytes!
+    gasPrice: BigInt!
+    decryptKey: String!
+  ): CheckerResult!
+}
+
+type CheckerResult {
+  canExec: Boolean!
+  execPayload: String!
+}

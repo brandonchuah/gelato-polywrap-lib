@@ -1,0 +1,9 @@
+format: 0.0.1-prealpha.4
+repository: https://github.com/web3-api/monorepo
+language: interface
+modules:
+  query:
+    schema: ./src/query.graphql
+import_redirects:
+  - uri: ens/gelato-plugin.eth
+    schema: ./node_modules/gelato-polywrap-plugin/build/schema.graphql

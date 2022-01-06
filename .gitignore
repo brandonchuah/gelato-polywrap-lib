@@ -1,0 +1,5 @@
+/gelato-polywrap-interface/build
+/gelato-polywrap-plugin/build
+
+/gelato-polywrap-interface/node_modules
+/gelato-polywrap-plugin/node_modules
